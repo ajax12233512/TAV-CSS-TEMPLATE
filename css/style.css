@@ -94,15 +94,26 @@ body {
   display: flex;
 }
 
+.header_top-social div{
+  margin: 0 5px;
+}
+
+.header_top-social div a{
+  display: block;
+  font-size: 20px;
+  color: #02caf0;
+  margin: auto 0;
+}
+
 .header_top-contact {
   display: flex;
-  margin-right: 20%;
+  margin-right: 10%;
 }
 
 .header_top-contact a,
 .header_top-contact a:hover {
   display: flex;
-  color: #c3c3c5;
+  color: black
 }
 
 .header_section .nav_container {
@@ -294,7 +305,7 @@ a:focus {
 
 /* about section */
 .about_section {
-  padding-top: 50px;
+  padding-top: 5%;
   position: relative;
 }
 
@@ -356,6 +367,19 @@ a:focus {
 /* end about section */
 
 /* service section */
+.service_section::after{
+  position: absolute;
+  content: "";
+  background-image: url(../images/blue-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 42%;
+  height: 70px;
+  transform: rotateY(180deg);
+  left: -4%;
+  z-index: -1;
+}
+
 .service_img-box {
   position: relative;
 }
@@ -401,6 +425,8 @@ a:focus {
   background-color: #78cffd;
 }
 
+
+
 /* service section */
 
 /* shop section */
@@ -437,6 +463,18 @@ a:focus {
 /* client section */
 .client_section {
   padding-bottom: 125px;
+}
+
+.client_section::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 65px;
+  height: 120px;
+  transform: translateY(-50%);
+  transform: rotateY(180deg);
+  background-image: url(../images/circle-bg.jpg);
+  background-size: cover;
 }
 
 .client_box {
@@ -706,6 +744,13 @@ a:focus {
 .img-fluid{
   width: 60%;
   height: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.three-steps{
+  width: 100%;
+  height: 100%;
   display: block;
   margin: 0 auto;
 }
